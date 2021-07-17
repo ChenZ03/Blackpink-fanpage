@@ -9,7 +9,7 @@
     src: url(../Primetime.ttf);
 }
 
-@media (min-width: 1025px){
+@media (min-width: 1200px){
     .wrap{
         display: flex ;
         flex-direction: row !important;
@@ -50,7 +50,7 @@
 
 /* ABOUT  */
 
-@media (min-width: 1025px){
+@media (min-width: 1200px){
     .about{
         width: 100vw;
         position: relative;
@@ -104,7 +104,7 @@
 }
 
 
-@media (max-width : 996px){
+@media (max-width : 1119px){
     .bi-arrow-down {
         display: block;
     }
@@ -116,7 +116,7 @@
 
 /* members  */
 
-@media (min-width: 1025px){
+@media (min-width: 1200px){
     .members{
         width: auto;
     }
@@ -173,7 +173,7 @@
 }
 
 /* albums */
-@media (min-width: 1025px){
+@media (min-width: 1200px){
     .albums{
         width: 3000px;
         height: 100vh;
@@ -228,7 +228,7 @@
 }
 
 /* concerts */
-@media (min-width: 1025px){
+@media (min-width: 1200px){
     .concerts{
         padding-left: 150px;
         height: 100vh;
@@ -238,7 +238,7 @@
 
     .concerts .content{
         padding-left: 150px;
-        padding-top: 100px;
+       
     }
     
     .concerts img{
@@ -288,8 +288,63 @@
     font-size: 20px;
 }
 
+/* connect */
+.connect{
+    background-color: #E89EB1;
+    padding-top: 60px;
+    padding-left: 150px;
+}
+
+@media (min-width: 1200px){
+    .connect{
+        width: 1500px;
+    }
+
+    .connect h1{
+        font-size: 90px;
+        font-weight: bold;
+    }
+
+    .connect h2{
+        padding-top: 50px;
+    }
+
+    .connect h3{
+        width: 30%;
+        padding-top: 50px;
+        font-weight: bold;
+        border-bottom: 3px solid black;
+        margin-bottom: 30px;
+    }
+}
+
+.connect ul{
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+}
+
+.connect ul li{
+    padding-top: 20px;
+}
+
+.connect i{
+    font-size: 50px;
+}
+
+.connect a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    border-bottom: 2px dashed black;
+    margin-left: 30px;
+}
+
+
+
 /* footer  */
-@media (min-width: 1025px){
+@media (min-width: 1200px){
     .footer{
         height: 100vh;
         background-color: #E89EB1;
