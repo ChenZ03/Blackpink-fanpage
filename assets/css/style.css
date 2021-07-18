@@ -34,6 +34,18 @@
       
 }
 
+@media(min-width: 1200px){
+    .bigg{
+        display: block !important;
+    }
+}
+
+@media(max-width : 1199px){
+    .small {
+        display: block !important;
+    }
+}
+
 .wrap{
     display: flex;
     flex-direction: column;
@@ -90,7 +102,7 @@
         color: black;  
     }
     
-    .down{
+    .right{
         font-size: 60px;
         position: absolute;
         padding-right: 40px;
@@ -98,19 +110,65 @@
         bottom: 0;
     }
     
-    .bi-arrow-down{
-        display: none;
-    }
 }
 
+.about2{
+    background-color: #E89EB1;
+    width: 100%;
+    height: auto;
+}
 
-@media (max-width : 1119px){
-    .bi-arrow-down {
-        display: block;
+.about2 .content{ 
+    padding: 40px;
+    position: relative;
+}
+
+.grp2 img{
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: -10px 5px gray;
+}
+
+.about2 .col-12{
+    display: flex;
+    flex-direction: column;
+}
+
+.about2 .lg img{
+    padding-top: 40px;
+    width: 60vw;
+}
+
+.about2 p{
+    width: 80%;
+    font-size: 18px;
+}
+
+.about2 i{
+    font-size: 50px;
+    padding-left: 50px;
+}
+
+.about2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.about2 .bi-arrow-down{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media (max-width : 500px){
+    .about2 img, p{
+        width: 100% !important;
+        font-size: 22px !important;
     }
 
-    .bi-arrow-right{
-        display: none;
+    .about2 i{
+        font-size: 30px;
+        padding-left: 10px;
     }
 }
 
@@ -172,6 +230,61 @@
     }
 }
 
+.members2{
+    background-color: #E89EB1;
+    position: relative;
+    padding-top: 100px;
+}
+
+.members2 div{
+    padding: 20px;
+}
+
+.members2 .pic img{
+    border-radius: 20px;
+    box-shadow: -10px 10px gray;
+}
+
+.members2 .info{
+    padding-left: 40px;
+}
+
+.members2 h1{
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.members2 ul{
+    padding-top: 20px;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.members2 i{
+    font-size: 40px;
+    padding-left: 50px;
+}
+
+.members2 a{
+    text-decoration: none;
+    color: black;  
+}
+
+.members2 .info img{
+    padding-left: 50px;
+}
+
+@media (max-width:400px){
+    .members2 i{
+        padding-left: 30px;
+    }
+
+    .members2 .info img{
+        padding-left: 30px;
+    }
+}
+
+
 /* albums */
 @media (min-width: 1200px){
     .albums{
@@ -227,6 +340,46 @@
     padding-top: 10px;
 }
 
+.albums2{
+    background-color: #1C1C1B;
+    padding-top: 100px;
+    color: #E89EB1;
+}
+
+.albums2 h1{
+    font-size: 50px;
+}
+
+.albums2 img{
+    border-radius: 20px;
+    box-shadow: -10px 7px rgba(206,74,126,0.5);
+    width: 300px;
+    height: 300px;
+} 
+
+.albums2 .content h2{
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 2px solid #E89EB1;
+    padding: 20px;
+}
+
+.albums2 .content ol{
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.albums2 .row , .col-md-6 , .col-sm-6{
+    padding-top: 50px;
+}
+
+@media (max-width: 768px){
+    .albums2 img{
+        margin-right: 0 !important;
+        text-align: center;
+    }
+}
+
 /* concerts */
 @media (min-width: 1200px){
     .concerts{
@@ -265,7 +418,7 @@
 
 .concerts h1{
     font-size: 50px;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .desc h1{
@@ -286,6 +439,27 @@
     padding-left: 50px;
     padding-top: 50px;
     font-size: 20px;
+}
+
+.concert2 {
+    background-color: #1C1C1B;
+    padding-top: 200px;
+    color: #E89EB1;
+    padding-bottom: 100px;
+}
+
+.concert2 h1{
+    font-size: 50px;
+}
+
+.concert2 .col-12{
+    padding-top: 70px;
+}
+
+.concert2 img{
+    width: 80vw;
+    border-radius: 20px;
+    box-shadow: -10px 7px rgba(206,74,126,0.5);
 }
 
 /* connect */
@@ -341,6 +515,46 @@
     margin-left: 30px;
 }
 
+.connect2{
+    padding-top: 50px;
+    background-color: #E89EB1;
+    padding-bottom: 50px;
+}
+
+.connect2 h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.connect2 ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.connect2 i{
+    font-size: 50px;
+}
+
+.connect2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+@media (max-width: 400px){
+    .connect2 i{
+        font-size: 30px;
+    }
+    .connect2 a{
+        font-size: 20px;
+    }
+    .sp{
+        display: none !important;
+    }
+}
 
 
 /* footer  */
@@ -361,6 +575,7 @@
         letter-spacing: 2px;
     }
 }
+
 
 
 
