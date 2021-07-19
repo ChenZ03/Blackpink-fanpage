@@ -7,20 +7,23 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/img/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Blackpink FanPage</title>
   </head>
   <body>
     <div class="outer bigg d-none">
-        <div class="wrap">
-            <div class="about">
+        <div class="wrap" >
+            <div class="about" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="content">
                     <div class="row">
                         <div class="col-xl-6 col-md-6 col-sm-12 h-100 grp d-flex align-items-center">
-                            <img src="assets/img/blackpink grp.jpg" alt="#" class="img-fluid">
+                                <img src="assets/img/blackpink grp.jpg" alt="#" class="img-fluid">
+                           
                         </div>
                         <div class="col-xl-6 col-md-6 col-sm-12 h-100 bp text-center d-flex">
                             <div style="width: 80%; margin-top:25%;">
@@ -41,9 +44,12 @@
             </div>
 
 
-            <div class="members jennie">
-                <img src="/assets/img/jennie.jpg" alt="#" class="pic">
-                <div class="content">
+            <div class="members jennie " >
+                <div class="ho">
+                    <img src="/assets/img/jennie.jpg" alt="#" class="pic">
+                </div>
+               
+                <div class="content"  >
                     <h1>JENNIE 제니</h1>
                     <ul>
                         <li>
@@ -82,7 +88,10 @@
 
 
             <div class="members lisa">
-                <img src="/assets/img/lisa.jpg" alt="#" class="pic">
+                <div class="ho">
+                    <img src="/assets/img/lisa.jpg" alt="#" class="pic img-fluid">
+                </div>
+               
                 <div class="content">
                     <h1>LISA 리사</h1>
                     <ul>
@@ -204,8 +213,12 @@
                     <h1>ALBUMS</h1>
                     <div class="row d-flex justify-content-center align-items-center">
                         <div class="col-xl-4 d-flex justify-content-left align-items-center">
-                            <img src="assets/img/square up.png" alt="">
-                            <div class="content text-center" style="width: auto;">
+                            <button onclick="PlaySound('square')" onmouseout="StopSound('square')">
+                                <img src="assets/img/square up.png" alt="">
+                                <i class="bi bi-play-fill play"></i>
+                                <audio id='square' src="/assets/mp3/Forever Young.mp3" preload="auto"></audio>
+                            </button>
+                        <div class="content text-center" style="width: auto;">
                                 <h2>SQUARE UP</h2>
                                <ol>
                                    <li> Ddu-Du Ddu-Du (뚜두뚜두) </li>
@@ -217,7 +230,12 @@
                             </div>
                         </div>
                         <div class="col-xl-4 d-flex justify-content-left align-items-center">
-                            <img src="assets/img/kill this love pink.png" alt="">
+                            <button onclick="PlaySound('kill')" onmouseout="StopSound('kill')">
+                                <img src="assets/img/kill this love pink.png" alt="">
+                                <i class="bi bi-play-fill play"></i>
+                                <audio id='kill' src="/assets/mp3/Dk what to do.mp3" preload="auto"></audio>
+                            </button>
+                           
                             <div class="content text-center" style="width: auto;">
                                 <h2>KILL THIS LOVE</h2>
                                <ol>
@@ -230,7 +248,12 @@
                             </div>
                         </div>
                         <div class="col-xl-4 d-flex justify-content-left align-items-center">
-                            <img src="assets/img/album.jpg" alt="">
+                            <button onclick="PlaySound('album')" onmouseout="StopSound('album')">
+                                <img src="assets/img/album.jpg" alt="">
+                                <i class="bi bi-play-fill play"></i>
+                                <audio id='album' src="/assets/mp3/stay.mp3" preload="auto"></audio>
+                            </button>
+                            
                             <div class="content text-center" style="width: auto;">
                                 <h2>Blackpink (EP)</h2>
                                <ol>
@@ -246,7 +269,11 @@
                     </div>
                     <div class="row d-flex justify-content-center align-items-center">
                         <div class="col-xl-4 d-flex justify-content-left align-items-top">
-                            <img src="assets/img/jennie solo.jpg" alt="">
+                            <button onclick="PlaySound('jennie')" onmouseout="StopSound('jennie')">
+                                <img src="assets/img/jennie solo.jpg" alt="">
+                                <i class="bi bi-play-fill play"></i>
+                                <audio id='jennie' src="/assets/mp3/SOLO.mp3" preload="auto"></audio>
+                            </button>
                             <div class="content text-center" style="width: auto;">
                                 <h2>JENNIE</h2>
                                <ol>
@@ -256,7 +283,11 @@
                             </div>
                         </div>
                         <div class="col-xl-4 d-flex justify-content-left align-items-top">
-                            <img src="assets/img/rose solo.png" alt="">
+                            <button onclick="PlaySound('rose')" onmouseout="StopSound('rose')">
+                                <img src="assets/img/rose solo.png" alt="">
+                                <i class="bi bi-play-fill play"></i>
+                                <audio id='rose' src="/assets/mp3/on the ground.mp3" preload="auto"></audio>
+                            </button>
                             <div class="content text-center" style="width: auto;">
                                 <h2>R</h2>
                                <ol>
@@ -266,7 +297,11 @@
                             </div>
                         </div>
                         <div class="col-xl-4 d-flex justify-content-left align-items-center">
-                            <img src="assets/img/the album.png" alt="">
+                            <button onclick="PlaySound('the')" onmouseout="StopSound('the')">
+                                <img src="assets/img/the album.png" alt="">
+                                <i class="bi bi-play-fill play"></i>
+                                <audio id='the' src="/assets/mp3/You never know.mp3" preload="auto"></audio>
+                            </button>
                             <div class="content text-center" style="width: auto;">
                                 <h2>The Album</h2>
                                <ol>
@@ -288,7 +323,7 @@
             <div class="concerts">
                 <h1>CONCERTS</h1>
                 <div class="row ">
-                    <div class="content d-flex col-xl-5 align-items-start justify-content-center">
+                    <div class="content d-flex col-xl-5 align-items-start justify-content-center px-5   ">
                         <div class="row">
                             <div class="col-md-6 col-sm-12">
                                 <img src="assets/img/the show.jfif" alt="" style="width: 600px;">
@@ -388,6 +423,7 @@
     </div>
 
     <div class="small d-none">
+        
         <div class="about2">
             <div class="content">
                 <div class="row ">
@@ -414,7 +450,7 @@
 
 
         <div class="members2">
-            <div class="jennie2">
+            <div class="jennie2"  data-aos="zoom-in" data-aos-duration="1500">
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-md-6 col-sm-12 pic">
                         <img src="/assets/img/jennie.jpg" alt="" class="img-fluid">
@@ -457,7 +493,7 @@
                 </div>
             </div>
 
-            <div class="lisa2">
+            <div class="lisa2" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-md-6 col-sm-12 pic">
                         <img src="/assets/img/lisa.jpg" alt="" class="img-fluid">
@@ -500,7 +536,7 @@
                 </div>
             </div>
 
-            <div class="rose2">
+            <div class="rose2" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-md-6 col-sm-12 pic">
                         <img src="/assets/img/rose.png" alt="" class="img-fluid">
@@ -543,7 +579,7 @@
                 </div>
             </div>
 
-            <div class="jisoo2">
+            <div class="jisoo2" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-md-6 col-sm-12 pic">
                         <img src="/assets/img/jisoo.jpg" alt="" class="img-fluid">
@@ -591,9 +627,13 @@
         <div class="albums2">
             <div class="container">
                 <h1>ALBUMS</h1>
-                <div class="row">
+                <div class="row" data-aos="fade-left" data-aos-duration="2000">
                     <div class="col-md-6 col-sm-12  text-center">
-                        <img src="/assets/img/square up.png" alt="" class="img-fluid">
+                        <button onclick="PlaySound('square')" onmouseout="StopSound('square')">
+                            <img src="assets/img/square up.png" alt="">
+                            <i class="bi bi-play-fill play"></i>
+                            <audio id='square' src="/assets/mp3/Forever Young.mp3" preload="auto"></audio>
+                        </button>
                     </div>
                     <div class="col-md-6 col-sm-12 ">
                         <div class="content" style="width: auto;">
@@ -609,11 +649,15 @@
 
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-left" data-aos-duration="2000">
                     <div class="col-md-6 col-sm-12  text-center">
-                        <img src="/assets/img/kill this love pink.png" alt="" class="img-fluid">
+                        <button onclick="PlaySound('kill')" onmouseout="StopSound('kill')">
+                            <img src="assets/img/kill this love pink.png" alt="">
+                            <i class="bi bi-play-fill play"></i>
+                            <audio id='kill' src="/assets/mp3/Dk what to do.mp3" preload="auto"></audio>
+                        </button>
                     </div>
-                    <div class="col-md-6 col-sm-12 ">
+                    <div class="col-md-6 col-sm-12 " data-aos="fade-left" data-aos-duration="2000">
                         <div class="content" style="width: auto;">
                             <h2>KILL THIS LOVE</h2>
                             <ol>
@@ -627,9 +671,13 @@
 
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-left" data-aos-duration="2000">
                     <div class="col-md-6 col-sm-12  text-center">
-                        <img src="/assets/img/jennie solo.jpg" alt="" class="img-fluid">
+                        <button onclick="PlaySound('jennie')" onmouseout="StopSound('jennie')">
+                            <img src="assets/img/jennie solo.jpg" alt="">
+                            <i class="bi bi-play-fill play"></i>
+                            <audio id='jennie' src="/assets/mp3/SOLO.mp3" preload="auto"></audio>
+                        </button>
                     </div>
                     <div class="col-md-6 col-sm-12 ">
                         <div class="content" style="width: auto;">
@@ -642,9 +690,13 @@
 
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-left" data-aos-duration="2000">
                     <div class="col-md-6 col-sm-12  text-center">
-                        <img src="/assets/img/rose solo.png" alt="" class="img-fluid">
+                        <button onclick="PlaySound('rose')" onmouseout="StopSound('rose')">
+                            <img src="assets/img/rose solo.png" alt="">
+                            <i class="bi bi-play-fill play"></i>
+                            <audio id='rose' src="/assets/mp3/on the ground.mp3" preload="auto"></audio>
+                        </button>
                     </div>
                     <div class="col-md-6 col-sm-12 ">
                         <div class="content" style="width: auto;">
@@ -657,9 +709,13 @@
 
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-left" data-aos-duration="2000">
                     <div class="col-md-6 col-sm-12  text-center">
-                        <img src="/assets/img/album.jpg" alt="" class="img-fluid">
+                        <button onclick="PlaySound('album')" onmouseout="StopSound('album')">
+                            <img src="assets/img/album.jpg" alt="">
+                            <i class="bi bi-play-fill play"></i>
+                            <audio id='album' src="/assets/mp3/stay.mp3" preload="auto"></audio>
+                        </button>
                     </div>
                     <div class="col-md-6 col-sm-12 ">
                         <div class="content" style="width: auto;">
@@ -675,9 +731,13 @@
 
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-left" data-aos-duration="2000">
                     <div class="col-md-6 col-sm-12  text-center">
-                        <img src="/assets/img/the album.png" alt="" class="img-fluid">
+                        <button onclick="PlaySound('the')" onmouseout="StopSound('the')">
+                            <img src="assets/img/the album.png" alt="">
+                            <i class="bi bi-play-fill play"></i>
+                            <audio id='the' src="/assets/mp3/You never know.mp3" preload="auto"></audio>
+                        </button>
                     </div>
                     <div class="col-md-6 col-sm-12 ">
                         <div class="content" style="width: auto;">
@@ -702,7 +762,7 @@
         <div class="concert2">
             <div class="container">
                 <h1>CONCERTS</h1>
-                <div class="content ">
+                <div class="content " data-aos="fade-up-right" data-aos-duration="1500">
                     <div class="col-12 d-flex justify-content-center align-items-center">
                         <img src="/assets/img/world tour.png" alt="" class="img-fluid text-center">
                     </div>
@@ -734,7 +794,7 @@
                         </div> 
                     </div>
                 </div>
-                <div class="content ">
+                <div class="content " data-aos="fade-up-right" data-aos-duration="1500">
                     <div class="col-12 d-flex justify-content-center align-items-center">
                         <img src="/assets/img/the show.jfif" alt="" class="img-fluid text-center">
                     </div>
@@ -800,6 +860,16 @@
 
 	<script type="text/javascript">
         AOS.init();
-	</script>
+        function PlaySound(soundobj) {
+            var thissound=document.getElementById(soundobj);
+            thissound.play();
+        }
+        
+        function StopSound(soundobj) {
+            var thissound=document.getElementById(soundobj);
+            thissound.pause();
+            thissound.currentTime = 0;
+        }
+    </script>
   </body>
 </html>
