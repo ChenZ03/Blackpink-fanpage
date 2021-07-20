@@ -478,6 +478,10 @@
 
 }
 
+.concerts .row{
+    margin-top: -50px;
+}
+
 .concerts{
     background-color: #1C1C1B;
     color: #E89EB1;
