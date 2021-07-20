@@ -9,7 +9,7 @@
     src: url(../Primetime.ttf);
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px ) and (min-height:850px){
     .wrap{
         display: flex ;
         flex-direction: row !important;
@@ -34,13 +34,13 @@
       
 }
 
-@media(min-width: 1200px){
+@media(min-width: 1200px) and (min-height:850px){
     .bigg{
         display: block !important;
     }
 }
 
-@media(max-width : 1199px){
+@media(max-width : 1199px) , (max-height:849px){
     .small {
         display: block !important;
     }
@@ -63,7 +63,7 @@
 
 /* ABOUT  */
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) and (min-height:800px){
     .about{
         width: 100vw;
         position: relative;
@@ -175,7 +175,7 @@
 
 /* members  */
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) and (min-height:800px){
     .members{
         width: auto;
     }
