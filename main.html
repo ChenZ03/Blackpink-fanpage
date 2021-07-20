@@ -12,14 +12,16 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/img/logo.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/jquery.transit.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="assets/script.js"></script>
     <title>Blackpink FanPage</title>
   </head>
   <body>
     <div class="outer bigg d-none">
         <div class="wrap" >
-            <div class="about" data-aos="zoom-in" data-aos-duration="1500">
-                <div class="content">
+            <div class="about" data-aos="zoom-in" data-aos-duration="1500" id="p1">
+                <div class="content" >
                     <div class="row">
                         <div class="col-xl-6 col-md-6 col-sm-12 h-100 grp d-flex align-items-center">
                                 <img src="assets/img/blackpink grp.jpg" alt="#" class="img-fluid">
@@ -39,12 +41,12 @@
                             
                         </div>
                     </div>
-                    <i class="bi bi-arrow-right right"></i>
+                    <i class="bi bi-arrow-right right" ></i>
                 </div>
             </div>
 
 
-            <div class="members jennie " >
+            <div class="members jennie" id="p2">
                 <div class="ho">
                     <img src="/assets/img/jennie.jpg" alt="#" class="pic">
                 </div>
@@ -87,7 +89,7 @@
             </div>
 
 
-            <div class="members lisa">
+            <div class="members lisa" id="p3">
                 <div class="ho">
                     <img src="/assets/img/lisa.jpg" alt="#" class="pic img-fluid">
                 </div>
@@ -130,7 +132,7 @@
             </div>
 
 
-            <div class="members rose">
+            <div class="members rose" id="p4">
                 <img src="/assets/img/rose.png" alt="#" class="pic">
                 <div class="content">
                     <h1>ROSÉ 로제</h1>
@@ -170,7 +172,7 @@
             </div>
 
 
-            <div class="members jisoo">
+            <div class="members jisoo" id="a1">
                 <img src="/assets/img/jisoo.jpg" alt="#" class="pic">
                 <div class="content">
                     <h1>Jisoo 지수</h1>
@@ -211,7 +213,7 @@
             <div class="albums">
                 <div class="container-fluid">
                     <h1>ALBUMS</h1>
-                    <div class="row d-flex justify-content-center align-items-center">
+                    <div class="row d-flex justify-content-center align-items-center aa" >
                         <div class="col-xl-4 d-flex justify-content-left align-items-center">
                             <button onclick="PlaySound('square')" onmouseout="StopSound('square')">
                                 <img src="assets/img/square up.png" alt="">
@@ -229,7 +231,7 @@
                                </ol>
                             </div>
                         </div>
-                        <div class="col-xl-4 d-flex justify-content-left align-items-center">
+                        <div class="col-xl-4 d-flex justify-content-left align-items-center ab" >
                             <button onclick="PlaySound('kill')" onmouseout="StopSound('kill')">
                                 <img src="assets/img/kill this love pink.png" alt="">
                                 <i class="bi bi-play-fill play"></i>
@@ -247,7 +249,7 @@
                                </ol>
                             </div>
                         </div>
-                        <div class="col-xl-4 d-flex justify-content-left align-items-center">
+                        <div class="col-xl-4 d-flex justify-content-left align-items-center ac">
                             <button onclick="PlaySound('album')" onmouseout="StopSound('album')">
                                 <img src="assets/img/album.jpg" alt="">
                                 <i class="bi bi-play-fill play"></i>
@@ -267,7 +269,7 @@
                         </div>
              
                     </div>
-                    <div class="row d-flex justify-content-center align-items-center">
+                    <div class="row d-flex justify-content-center align-items-center aa"  >
                         <div class="col-xl-4 d-flex justify-content-left align-items-top">
                             <button onclick="PlaySound('jennie')" onmouseout="StopSound('jennie')">
                                 <img src="assets/img/jennie solo.jpg" alt="">
@@ -282,7 +284,7 @@
                                </ol>
                             </div>
                         </div>
-                        <div class="col-xl-4 d-flex justify-content-left align-items-top">
+                        <div class="col-xl-4 d-flex justify-content-left align-items-top ab" >
                             <button onclick="PlaySound('rose')" onmouseout="StopSound('rose')">
                                 <img src="assets/img/rose solo.png" alt="">
                                 <i class="bi bi-play-fill play"></i>
@@ -296,7 +298,7 @@
                                </ol>
                             </div>
                         </div>
-                        <div class="col-xl-4 d-flex justify-content-left align-items-center">
+                        <div class="col-xl-4 d-flex justify-content-left align-items-center ac" id="ac">
                             <button onclick="PlaySound('the')" onmouseout="StopSound('the')">
                                 <img src="assets/img/the album.png" alt="">
                                 <i class="bi bi-play-fill play"></i>
@@ -323,7 +325,7 @@
             <div class="concerts">
                 <h1>CONCERTS</h1>
                 <div class="row ">
-                    <div class="content d-flex col-xl-5 align-items-start justify-content-center px-5   ">
+                    <div class="content d-flex col-xl-5 align-items-start justify-content-center px-5  c1">
                         <div class="row">
                             <div class="col-md-6 col-sm-12">
                                 <img src="assets/img/the show.jfif" alt="" style="width: 600px;">
@@ -359,7 +361,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="content d-flex col-xl-7 align-items-start justify-content-center">
+                    <div class="content d-flex col-xl-7 align-items-start justify-content-center c2">
                         <div class="row">
                             <div class="col-md-6 col-sm-12">
                                 <img src="assets/img/world tour.png" alt="">
@@ -398,7 +400,7 @@
                 </div>
             </div>
 
-            <div class="connect">
+            <div class="connect end">
                     <h1>BLΛƆKPIИK In Your Area</h1>
                     <h2>Let Blackpink's music and spirit always be with you</h2>
                     <br>
@@ -833,7 +835,7 @@
         <!-- end for concerts -->
 
         <div class="connect2">
-            <div class="container" data-aos="fade-up" data-aos-duration="1500">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
                 <h1>BLΛƆKPIИK In Your Area</h1>
                 <h2>Let Blackpink's music and spirit always be with you</h2>
                 <br>
@@ -860,16 +862,41 @@
 
 	<script type="text/javascript">
         AOS.init();
-        function PlaySound(soundobj) {
-            var thissound=document.getElementById(soundobj);
-            thissound.play();
-        }
-        
-        function StopSound(soundobj) {
-            var thissound=document.getElementById(soundobj);
-            thissound.pause();
-            thissound.currentTime = 0;
-        }
+        setInterval(function(){ 
+            var x = document.getElementById('p1')
+            var y4 =  x.getBoundingClientRect();
+            console.log(y4.left)
+            if (y4.left < -800){
+                $(".jennie").transition({marginTop : '0px', opacity : 1})
+            }
+            if(y4.left < -2080){
+                $(".lisa").transition({marginBottom : '0px', opacity : 1})
+            }
+            if(y4.left < - 3800){
+                $(".rose").transition({marginTop : '0px', opacity : 1})
+            }
+            if(y4   .left < -5000){
+                $(".jisoo").transition({marginBottom : '0px', opacity : 1})
+            }
+            if(y4.left < -7200){
+                $(".aa").transition({opacity : 1})
+            }
+            if(y4.left < -7900){
+                $(".ab").transition({opacity : 1})
+            }
+            if(y4.left < -8800){
+                $(".ac").transition({opacity : 1})
+            }
+            if(y4.left < -10100){
+                $(".c1").transition({ opacity : 1, })
+            }
+            if(y4.left < -11400){
+                $(".c2").transition({ opacity : 1, })
+            }if(y4.left < -13000){
+                $(".end").transition({ marginBottom : '300px' , opacity : 1})
+            }
+        }, 100);
+    
     </script>
   </body>
 </html>

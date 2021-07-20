@@ -24,7 +24,7 @@
         width: auto;
         height: 100vw;
         transform: rotate(-90deg) translateX(-100vh);
-        transform-origin: top left;
+        transform-origin: top left;  
         overflow-y: auto;
         overflow-x: hidden;
         position: absolute;
@@ -55,6 +55,10 @@
 
 .row{
     height: 100%;
+}
+
+.small{
+    overflow-x: hidden;
 }
 
 /* ABOUT  */
@@ -531,6 +535,7 @@
 @media (min-width: 1200px){
     .connect{
         width: 1500px;
+        margin-bottom: 500px;
     }
 
     .connect h1{
@@ -634,6 +639,31 @@
     }
 }
 
+/* animations */
 
+.jennie,.rose{
+    display: flex;
+    margin-top: -300px;
+    opacity: 0;
+}
+
+.lisa,.jisoo{
+    display: flex;
+    margin-bottom: -300px;
+    opacity: 0;
+}
+
+.aa, .ab, .ac{
+    opacity: 0 ;
+}
+
+.c1, .c2, .c3{
+    opacity: 0;
+}
+
+.end{
+    opacity: 0;
+    margin-bottom: -500px ;
+}
 
 
