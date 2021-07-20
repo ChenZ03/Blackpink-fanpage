@@ -332,6 +332,10 @@
     transition: 500ms ease;
 }
 
+.albums .row{
+    margin-top: -10px;
+}
+
 .albums h2{
     width: 400px;
     font-weight: bold;
